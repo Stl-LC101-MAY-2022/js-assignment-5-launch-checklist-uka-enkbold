@@ -17,10 +17,15 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 }
 
 function validateInput(testInput) {
-   
-}
-
+    if (pilotName.value === "" || copilotName.value === "" || fuelLevel.value === "" || cargoMass.value === "")  {
+        alert("All fields are required!");
+        
+     }
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
+    if ((typeof pilotName.value !== "string") || (typeof copilotName.value !== "string" || (typeof Number (fuelLevel.value) !== "number") || (typeof Number (cargoMass.value !== "number")))){
+        alert("Appropriate data type is required");
+     }
+}
    
 }
 
