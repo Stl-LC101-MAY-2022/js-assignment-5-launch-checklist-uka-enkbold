@@ -1,6 +1,6 @@
 // Write your JavaScript code here!
 
-const { myFetch } = require("./scriptHelper");
+let  { myFetch } = require("./scriptHelper");
 
 window.addEventListener("load", function() {
 
@@ -8,6 +8,7 @@ window.addEventListener("load", function() {
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
 
    let listedPlanetsResponse = myFetch();
+
    listedPlanetsResponse.then(function (result) {
        listedPlanets = result;
        console.log(listedPlanets);
